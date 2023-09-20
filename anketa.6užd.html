@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<<device-width>>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="get" class="form">
+        <div class="form-example">
+            <label for="user id">User id.:</label>
+            <input type="text" name="user id" id="user id" required />
+        </div>
+
+        <div class="form-example">
+            <label for="email">Password: </label>
+            <input type="password" id="pass" name="password" minlength="7" maxlength="12" required />
+        </div>
+
+        <div class="form-example">
+            <label for="name">Name: </label>
+            <input type='text' id='name' onkeydown="return /[a-zA-Z]/i.test(event.key)" />
+        </div>
+
+        <div class="form-example">
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" required />
+        </div>
+
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="lithuania">Lithuania</option>
+                <option value="china">China</option>
+                <option value="india">India</option>
+                <option value="jav">JAV</option>
+            </select>
+        </div>
+
+        </div>
+        <label for="zipcode">ZIP code:</label>
+        <input type="number" name="zipcode" id="zipcode" min="1" max="9999" required>
+        <div>
+
+            <div class="form-example">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required />
+            </div>
+            <form>
+                <label for="radio">Sex:
+                    <input type="radio" name="gender" value="meskere"> Female
+                    <input type="radio" name="gender" value="suniukas"> Male
+                    <input type="radio" name="gender" value="kaciukas"> Prefer not to say
+            </form>
+
+            <form>
+                <label for="radio">Language:
+                    <input type="radio" name="language" value="english"> english
+                    <input type="radio" name="language" value="lithuanian"> lithuanian
+            </form>
+            <div>
+                <label for="radio">About:
+                    <textarea id="about" name="about" rows="10" cols="50">
+                </textarea>
+            </div>
+
+
+            <br>
+            <button type="submit" value="Submit">Submit</button>
+</body>
+
+</html>
