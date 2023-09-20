@@ -7,8 +7,78 @@
 </head>
 <body>
     <form action="" method="get" class="form-example">
+
         <div class="form-example">
-          <label for="name">Vardas: </label>
+          <label for="name">Vardas:</label>
           <input type="text" name="name" id="name" required />
+        </div>
+
+          <form action="" method="get" class="form-example">
+            <div class="form-example">
+              <label for="name">Pavardė:</label>
+              <input type="text" name="pavarde" id="pavarde" required />
+            </div>
+
+            <div class="form-example">
+                <label for="email">El.paštas: </label>
+                <input type="email" name="email" id="email" required />
+              </div>
+
+              <div class="form-example">
+                <label for="email">Slaptažodis: </label>
+                <input type="password" id="pass" name="password" minlength="8" maxlength="12" required/>
+              </div>
+
+              <div class="form-example">
+                <label for="name">Adresas:</label>
+                <input type="text" name="address" id="adresas" required />
+              </div>
+
+              <div>
+              <label for="salis">Šalis:</label>
+              <select id="šalys" name="šalys">
+                <option value="Lietuva">Lietuva</option>
+                <option value="Indija">Indija</option>
+                <option value="Kinija">Kinija</option>
+                <option value="JAV">JAV</option>
+                <option value="Italija">Italija</option>
+                <option value="Rusija">Rusija</option>
+                <option value="Ukraina">Ukraina</option>
+              </select>
+              <input type="submit">
+              </div>
+
+              <div class="form-example">
+                <label for="ZIP code">ZIP code:</label>
+                <input type="ZIP code" name="ZIP code" id="ZIP code" required />
+              </div>
+
+              <div>
+                <label for="radio">Lytis:
+                    <form action=""> 
+                        <input type="radio" name="lytis" value="Vyras"> Vyras
+                        <input type="radio" name="lytis" value="Moteris"> Moteris
+                        <input type="radio" name="lytis" value="Kita"> Kita 
+                      </form> 
+              </div>
+
+              <div>
+                <label for="story">Apie tave:</label>
+                <textarea id="story" name="story" rows="10" cols="50">
+                </textarea>
+              </div>
+
+              <button type="submit" value="Submit">Pateikti</button>
+
+
+
+              
+            
+              
+              
+
+
+        
+
 </body>
 </html>
